@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="" name="description">
+    <meta http-equiv="content-type" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Assessment Form</title>
+
+</head>
+<body>
+
+<script>
+
+  $(function(){
+  var button1 = document.getElementById('add_q-item');
+  var button2 = document.getElementById('save_form');
+  var btn = document.getElementsByClassName('rem-q-item');
+  var btn2 = document.getElementsByClassName('add_radio');
+  var btn3 =  document.getElementsByClassName('rem-on-display');
+  var btn4= document.getElementsByClassName('req-item');
+  var btn5 = document.getElementsByClassName('choice-option');
+  var btn6 = document.getElementsByClassName('add_chk');
+  var editable_elements = document.querySelectorAll("[contenteditable=true]");
+  editable_elements[0].setAttribute("contenteditable", false);
+  editable_elements[1].setAttribute("contenteditable", false);
+
+    button1.style.display = 'none';
+    button2.style.display = 'none';
+    for(const btns of btn3){
+      btns.style.display = 'none';
+    }
+    for(const btns of btn){
+      btns.style.display = 'none';
+    }
+    for(const btns of btn2){
+      btns.style.display = 'none';
+    }
+    for(const btns of btn6){
+      btns.style.display = 'none';
+    }
+    for(const btns of btn5){
+      btns.style.display = 'none';
+    }
+
+  });
+</script>
+</body>
+</html>
